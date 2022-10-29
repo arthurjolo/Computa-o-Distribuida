@@ -1,7 +1,7 @@
 import java.rmi.Remote;
 import java.rmi.RemoteException;
 
-public interface TableInterface extends Remote <E>{
+public interface ListInteface<E> extends Remote{
 
 	public void add(int index, E element) throws RemoteException;
 	public E get(int index) throws RemoteException;
